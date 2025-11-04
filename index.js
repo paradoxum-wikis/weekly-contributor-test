@@ -27,7 +27,7 @@ client.once('ready', async () => {
     const dayOfWeek = now.getDay();
     const daysSinceMonday = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
     const lastMonday = new Date(now);
-    lastMonday.setDate(now.getDate() - daysSinceMonday);
+    lastMonday.setDate(now.getDate() - daysSinceMonday - 7);
     lastMonday.setHours(0, 0, 0, 0);
 
     const since = lastMonday.getTime();
