@@ -1,0 +1,48 @@
+name: What Could This Be?
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch and check
+        run: |
+          if [ -f .milestone_sent ]; then
+            echo "Milestone already reached."
+            exit 0
+          fi
+          response=$(curl -s "https://tds.fandom.com/api.php?action=query&format=json&list=users&ususers=Mentin123&usprop=editcount")
+          editcount=$(echo "$response" | jq -r '.query.users[0].editcount')
+          if [ "$editcount" -ge 100000 ]; then
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "content": "<@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "🎉 Would you look at that!",
+                    "color": 16711680,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyou.png"
+                    }
+                  }
+                ]
+              }'
+            touch .milestone_sent
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add .milestone_sent
+            git commit -m "chore: milestone reached" || echo "No changes to commit"
+            git push
+          fi
