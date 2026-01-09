@@ -39,7 +39,7 @@ jobs:
                   }
                 ]
               }'
-            sleep 5
+            sleep 30
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
@@ -54,7 +54,22 @@ jobs:
                   }
                 ]
               }'
-            sleep 5
+            sleep 30
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "content": "From <@250529133308674048> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "😈 Now that's a bold one...",
+                    "color": 15755521,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyouwikia.png"
+                    }
+                  }
+                ]
+              }'
+            sleep 30
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
@@ -69,17 +84,32 @@ jobs:
                   }
                 ]
               }'
-            sleep 5
+            sleep 30
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
-                "content": "From <@250529133308674048> to <@466609959023673345>",
+                "content": "From <@1372605825193087066> to <@466609959023673345>",
                 "embeds": [
                   {
-                    "title": "✉️ The final one...",
-                    "color": 15755521,
+                    "title": "🔴 His favorite is red too!",
+                    "color": 11207189,
                     "image": {
-                      "url": "https://bin.t7ru.link/thankyouwikia.png"
+                      "url": "https://bin.t7ru.link/thankyoured.png"
+                    }
+                  }
+                ]
+              }'
+            sleep 30
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "content": "From <@653813863971684373> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "😏 Well, that's flattering.",
+                    "color": 6175265,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyoucyber.png"
                     }
                   }
                 ]
