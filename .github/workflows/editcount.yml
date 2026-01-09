@@ -114,6 +114,36 @@ jobs:
                   }
                 ]
               }'
+            sleep 30
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "content": "From <@1319627806615015494> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "🎃 The guy has only been here recently, yet you've made such an impact on him!",
+                    "color": 16738816,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyouloe.png"
+                    }
+                  }
+                ]
+              }'
+            sleep 30
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "content": "From everyone to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "👋 Don't forget about us, Mentin!",
+                    "color": 49151,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyouall.png"
+                    }
+                  }
+                ]
+              }'
             touch .milestone_sent
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
