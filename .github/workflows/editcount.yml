@@ -28,13 +28,58 @@ jobs:
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
-                "content": "<@466609959023673345>",
+                "content": "From <@380694434980954114> to <@466609959023673345>",
                 "embeds": [
                   {
                     "title": "🎉 Would you look at that!",
                     "color": 16711680,
                     "image": {
                       "url": "https://bin.t7ru.link/thankyou.png"
+                    }
+                  }
+                ]
+              }'
+            sleep 5
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "content": "From <@1175202834749337741> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "😱 Sir, a second message has hit the server!",
+                    "color": 4280800,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyourusty.png"
+                    }
+                  }
+                ]
+              }'
+            sleep 5
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "content": "From <@665163645206134825> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "✌️ Unc?!?",
+                    "color": 0,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyoumono.png"
+                    }
+                  }
+                ]
+              }'
+            sleep 5
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "content": "From <@250529133308674048> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "✉️ The final one...",
+                    "color": 15755521,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyouwikia.png"
                     }
                   }
                 ]
