@@ -32,9 +32,9 @@ jobs:
                 "embeds": [
                   {
                     "title": "🎉 Would you look at that!",
-                    "color": 16711680,
+                    "color": 16777077,
                     "image": {
-                      "url": "https://bin.t7ru.link/thankyou.png"
+                      "url": "https://bin.t7ru.link/thankyou.png?v=2"
                     }
                   }
                 ]
@@ -62,7 +62,7 @@ jobs:
                 "embeds": [
                   {
                     "title": "😈 Now that's a bold one...",
-                    "color": 15755521,
+                    "color": 15357490,
                     "image": {
                       "url": "https://bin.t7ru.link/thankyouwikia.png"
                     }
@@ -91,7 +91,7 @@ jobs:
                 "content": "From <@1372605825193087066> to <@466609959023673345>",
                 "embeds": [
                   {
-                    "title": "🔴 His favorite is red too!",
+                    "title": "🔴 His favorite is red, too!",
                     "color": 11207189,
                     "image": {
                       "url": "https://bin.t7ru.link/thankyoured.png"
@@ -107,7 +107,7 @@ jobs:
                 "embeds": [
                   {
                     "title": "😏 Well, that's flattering.",
-                    "color": 6175265,
+                    "color": 6895309,
                     "image": {
                       "url": "https://bin.t7ru.link/thankyoucyber.png"
                     }
@@ -136,7 +136,7 @@ jobs:
                 "content": "From everyone to <@466609959023673345>",
                 "embeds": [
                   {
-                    "title": "👋 Don't forget about us, Mentin!",
+                    "title": "👋 This is the final one! (And sorry for hijacking the channel, dehehe.)",
                     "color": 49151,
                     "image": {
                       "url": "https://bin.t7ru.link/thankyouall.png"
