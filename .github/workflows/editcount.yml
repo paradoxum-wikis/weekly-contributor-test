@@ -133,6 +133,51 @@ jobs:
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
+                "content": "From <@699019082384539700> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "👁️ I'm seeing something...",
+                    "color": 421937,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyouvisible.png"
+                    }
+                  }
+                ]
+              }'
+            sleep 30
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "content": "From <@937386825562062858> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "❄️ Don't ask why that's on the top right.",
+                    "color": 7451901,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyouzerox.png?v=2"
+                    }
+                  }
+                ]
+              }'
+            sleep 30
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "content": "From <@639243615549390916> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "☄️ Interesting...",
+                    "color": 1321810,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyoucastle.png"
+                    }
+                  }
+                ]
+              }'
+            sleep 30
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
                 "content": "From everyone to <@466609959023673345>",
                 "embeds": [
                   {
