@@ -77,7 +77,7 @@ jobs:
                 "embeds": [
                   {
                     "title": "✌️ Unc?!?",
-                    "color": 0,
+                    "color": 65793,
                     "image": {
                       "url": "https://bin.t7ru.link/thankyoumono.png"
                     }
@@ -184,7 +184,7 @@ jobs:
                     "title": "👋 This is the final one! (And sorry for hijacking the channel, dehehe.)",
                     "color": 49151,
                     "image": {
-                      "url": "https://bin.t7ru.link/thankyouall.png"
+                      "url": "https://bin.t7ru.link/thankyouall.png?v=2"
                     }
                   }
                 ]
