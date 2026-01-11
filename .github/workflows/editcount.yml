@@ -193,6 +193,21 @@ jobs:
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
+                "content": "From <@1238584286463004813> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "🟪 I can't believe Lord Exo wrote such passionate message!",
+                    "color": 7285368,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyouhayyaan.png"
+                    }
+                  }
+                ]
+              }'
+            sleep 30
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
                 "content": "From everyone to <@466609959023673345>",
                 "embeds": [
                   {
