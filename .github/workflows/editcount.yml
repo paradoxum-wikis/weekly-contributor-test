@@ -178,6 +178,21 @@ jobs:
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
+                "content": "From <@857144439478157343> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "💔🥀🕊️ He's a bit of an airhead at times, but that's why we love him.",
+                    "color": 16666715,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyoukim.png"
+                    }
+                  }
+                ]
+              }'
+            sleep 30
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
                 "content": "From everyone to <@466609959023673345>",
                 "embeds": [
                   {
