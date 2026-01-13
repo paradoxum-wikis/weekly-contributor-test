@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Fetch and check
         run: |
@@ -101,7 +101,7 @@ jobs:
                 "content": "From <@665163645206134825> to <@466609959023673345>",
                 "embeds": [
                   {
-                    "title": "✌️ Unc?!?",
+                    "title": "✌️ Nephew?!? (or is it unc..?)",
                     "color": 65793,
                     "image": {
                       "url": "https://bin.t7ru.link/thankyoumono.png"
