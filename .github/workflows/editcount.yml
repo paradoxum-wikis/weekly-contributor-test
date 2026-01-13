@@ -27,6 +27,19 @@ jobs:
           if [ "$editcount" -ge 100000 ]; then
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
+              -d '{"content": "Well, <@466609959023673345>? I think you know what just happened, right?"}'
+            sleep 5
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{"content": "Seems like you've reached a milestone not many can achieve..."}'
+            sleep 5
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{"content": "But before that, I have something to say to you."}'
+            sleep 7
+
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
               -d '{
                 "content": "From <@380694434980954114> to <@466609959023673345>",
                 "embeds": [
@@ -39,7 +52,19 @@ jobs:
                   }
                 ]
               }'
-            sleep 30
+            sleep 45
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{"content": "Wait, no..?"}'
+            sleep 7
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{"content": "Actually..."}'
+            sleep 7
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{"content": "WE have something to say to you!"}'
+            sleep 5
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
@@ -54,7 +79,7 @@ jobs:
                   }
                 ]
               }'
-            sleep 30
+            sleep 45
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
@@ -69,7 +94,7 @@ jobs:
                   }
                 ]
               }'
-            sleep 30
+            sleep 45
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
@@ -84,7 +109,7 @@ jobs:
                   }
                 ]
               }'
-            sleep 30
+            sleep 45
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
@@ -99,7 +124,7 @@ jobs:
                   }
                 ]
               }'
-            sleep 30
+            sleep 45
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
@@ -114,7 +139,7 @@ jobs:
                   }
                 ]
               }'
-            sleep 30
+            sleep 45
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
@@ -129,7 +154,7 @@ jobs:
                   }
                 ]
               }'
-            sleep 30
+            sleep 45
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
@@ -144,7 +169,7 @@ jobs:
                   }
                 ]
               }'
-            sleep 30
+            sleep 45
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
@@ -159,7 +184,7 @@ jobs:
                   }
                 ]
               }'
-            sleep 30
+            sleep 45
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
@@ -174,7 +199,7 @@ jobs:
                   }
                 ]
               }'
-            sleep 30
+            sleep 45
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
@@ -189,7 +214,7 @@ jobs:
                   }
                 ]
               }'
-            sleep 30
+            sleep 45
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
@@ -204,7 +229,22 @@ jobs:
                   }
                 ]
               }'
-            sleep 30
+            sleep 45
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "content": "From <@817734911724355614> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "💫 He wrote to you from a dreamland!",
+                    "color": 16022012,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyouonett.png"
+                    }
+                  }
+                ]
+              }'
+            sleep 45
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
@@ -219,7 +259,7 @@ jobs:
                   }
                 ]
               }'
-            sleep 30
+            sleep 45
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
