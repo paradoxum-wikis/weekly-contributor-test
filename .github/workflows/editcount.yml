@@ -191,7 +191,7 @@ jobs:
                 "content": "From <@1189814746422194176> to <@466609959023673345>",
                 "embeds": [
                   {
-                    "title": "😭 Is this a gem or a coal?",
+                    "title": "🥶 Is this a gem or a coal?",
                     "color": 8421504,
                     "image": {
                       "url": "https://bin.t7ru.link/thankyouvortex.png"
@@ -270,6 +270,36 @@ jobs:
                     "color": 12164086,
                     "image": {
                       "url": "https://bin.t7ru.link/thankyouadachi.png"
+                    }
+                  }
+                ]
+              }'
+            sleep 45
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "content": "From <@871976369536524328> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "🤑 I'm betting 13 million dollars this is a good one.",
+                    "color": 16493921,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyou13m.png"
+                    }
+                  }
+                ]
+              }'
+            sleep 45
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "content": "From <@851393293282967572> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "🥜 A little something from the peanut man.",
+                    "color": 9363180,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyoupeanut.png"
                     }
                   }
                 ]
