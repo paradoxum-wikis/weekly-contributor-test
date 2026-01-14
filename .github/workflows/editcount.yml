@@ -31,7 +31,7 @@ jobs:
             sleep 5
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
-              -d '{"content": "Seems like you've reached a milestone not many can achieve..."}'
+              -d '{"content": "Seems like you have reached a milestone not many can achieve..."}'
             sleep 5
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
