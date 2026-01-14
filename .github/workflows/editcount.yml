@@ -188,6 +188,21 @@ jobs:
             curl -X POST "${{ secrets.WEBHOOK_URL }}" \
               -H "Content-Type: application/json" \
               -d '{
+                "content": "From <@1189814746422194176> to <@466609959023673345>",
+                "embeds": [
+                  {
+                    "title": "😭 Is this a gem or a coal?",
+                    "color": 8421504,
+                    "image": {
+                      "url": "https://bin.t7ru.link/thankyouvortex.png"
+                    }
+                  }
+                ]
+              }'
+            sleep 45
+            curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d '{
                 "content": "From <@639243615549390916> to <@466609959023673345>",
                 "embeds": [
                   {
