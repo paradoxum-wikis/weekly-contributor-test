@@ -1,0 +1,244 @@
+name: Milestone Messages (Manual)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  send-messages:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Execute Webhooks
+        run: |
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{"content": "Actually..."}'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{"content": "WE have something to say to you!"}'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@250529133308674048> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "😈 Now that'\''s a bold one...",
+                  "color": 15357490,
+                  "image": { "url": "https://bin.t7ru.link/thankyouwikia.png" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@665163645206134825> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "✌️ Even nephew has something to say?!?",
+                  "color": 65793,
+                  "image": { "url": "https://bin.t7ru.link/thankyoumono.png" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@1372605825193087066> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "🔴 His favorite is red, too!",
+                  "color": 11207189,
+                  "image": { "url": "https://bin.t7ru.link/thankyoured.png" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@653813863971684373> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "😏 Well, that'\''s flattering.",
+                  "color": 6895309,
+                  "image": { "url": "https://bin.t7ru.link/thankyoucyber.png" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@1319627806615015494> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "🎃 The guy has only been here recently, yet you'\''ve made such an impact on him!",
+                  "color": 16738816,
+                  "image": { "url": "https://bin.t7ru.link/thankyouloe.png" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@699019082384539700> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "👁️ I'\''m seeing something...",
+                  "color": 421937,
+                  "image": { "url": "https://bin.t7ru.link/thankyouvisible.png" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@937386825562062858> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "❄️ Don'\''t ask why that'\''s on the top right.",
+                  "color": 7451901,
+                  "image": { "url": "https://bin.t7ru.link/thankyouzerox.png?v=2" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@1189814746422194176> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "🥶 Is this a gem or a coal?",
+                  "color": 8421504,
+                  "image": { "url": "https://bin.t7ru.link/thankyouvortex.png" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@639243615549390916> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "☄️ Interesting...",
+                  "color": 1321810,
+                  "image": { "url": "https://bin.t7ru.link/thankyoucastle.png" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@857144439478157343> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "💔🥀🕊️ He'\''s a bit of an airhead at times, but that'\''s why you love him.",
+                  "color": 16666715,
+                  "image": { "url": "https://bin.t7ru.link/thankyoukim.png" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@1238584286463004813> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "🟪 I can'\''t believe Lord Exo wrote such passionate message!",
+                  "color": 7285368,
+                  "image": { "url": "https://bin.t7ru.link/thankyouhayyaan.png" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@817734911724355614> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "💫 He wrote to you from a dreamland!",
+                  "color": 16022012,
+                  "image": { "url": "https://bin.t7ru.link/thankyouonett.png" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@788169378243412039> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "🌸 Adachi, Adachi!",
+                  "color": 12164086,
+                  "image": { "url": "https://bin.t7ru.link/thankyouadachi.png" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@871976369536524328> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "🤑 I'\''m betting 13 million dollars this is a good one.",
+                  "color": 16493921,
+                  "image": { "url": "https://bin.t7ru.link/thankyou13m.png" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From <@851393293282967572> to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "🥜 A little something from the peanut man.",
+                  "color": 9363180,
+                  "image": { "url": "https://bin.t7ru.link/thankyoupeanut.png" }
+                }
+              ]
+            }'
+          sleep 3
+
+          curl -X POST "${{ secrets.WEBHOOK_URL }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "content": "From everyone to <@466609959023673345>",
+              "embeds": [
+                {
+                  "title": "👋 This is the final one! (And sorry for hijacking the channel, dehehe.)",
+                  "color": 49151,
+                  "image": { "url": "https://bin.t7ru.link/thankyouall.png?v=2" }
+                }
+              ]
+            }'
