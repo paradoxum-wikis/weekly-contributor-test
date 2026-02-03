@@ -6,8 +6,11 @@
   "keywords": [],
   "author": "t7ru",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.js"
+  },
   "dependencies": {
-    "discord.js": "^14.24.2"
+    "discord.js": "^14.25.1"
   }
 }
